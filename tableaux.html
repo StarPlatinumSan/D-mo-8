@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="tableaux.css" />
+	</head>
+	<body>
+		<div class="containerTab">
+			<h1>Tableaux</h1>
+			<p class="txt">L'élément tableau est un groupe de lignes et de colonnes qui peuvent contenir des cellules.</p>
+			<p class="txt">Le parent d'un tableau est la balise <code class="gold">&lt;table&gt;</code>.</p>
+			<pre class="preGold">&lt;table border="1" &gt; ... &lt;/table&gt;</pre>
+			<p class="txt">border="1" crée une bordure de 1px.</p>
+
+			<div class="separation"></div>
+			<p class="txt">La balise <code class="gold">&lt;th&gt;</code> crée une cellule en tête.</p>
+			<p class="txt">La balise <code class="gold">&lt;tr&gt;</code> crée une ligne (row). La balise <code class="gold">&lt;td&gt;</code> crée une cellule (data/column).</p>
+
+			<div class="exemple">
+				<pre>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nom&lt;/th&gt;
+        &lt;th&gt;Âge&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Alice&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</pre
+				>
+
+				<!-- EXEMPLE -->
+
+				<div class="pratique exo1">
+					<table border="1">
+						<tr>
+							<th>Nom</th>
+							<th>Âge</th>
+						</tr>
+						<tr>
+							<td>Alice</td>
+							<td>25</td>
+						</tr>
+						<tr>
+							<td>Bob</td>
+							<td>30</td>
+						</tr>
+					</table>
+				</div>
+				<!-- PRATIQUE -->
+			</div>
+
+			<p class="txt">vous pouvez appliquer <code class="gold">colspan="2"</code> ou <code class="gold">rowspan="2"</code> qui donnent respectivement la largeur et la hauteur d'une cellule &lt;td&gt;</p>
+
+			<div class="separation"></div>
+
+			<p class="txt">Les balises suivantes sont des élément de block level; qui saute à chaque ligne:</p>
+			<p class="txt">La balise <code class="gold">&lt;thead&gt;</code> est un groupe de lignes de l'en-tete.</p>
+			<p class="txt">La balise <code class="gold">&lt;tbody&gt;</code> est un groupe de lignes de corps.</p>
+			<p class="txt">La balise <code class="gold">&lt;tfoot&gt;</code> est un groupe de lignes de pied de page.</p>
+			<p class="txt">Elles servent notamment à l'organisation du tableau et un CSS plus spécifique.</p>
+
+			<div class="exemple">
+				<pre>
+&lt;table border="1"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Nom&lt;/th&gt;
+            &lt;th&gt;Âge&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Alice&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Bob&lt;/td&gt;
+            &lt;td&gt;30&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;Fin du tableau&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre
+				>
+				<div class="pratique exo2">
+					<table border="1">
+						<thead>
+							<tr>
+								<th>Nom</th>
+								<th>Âge</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Alice</td>
+								<td>25</td>
+							</tr>
+							<tr>
+								<td>Bob</td>
+								<td>30</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="2">Fin du tableau</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+
+			<div class="separation"></div>
+
+			<!-- LE TRAVAIL COMMENCE ICI -->
+
+			<h2 class="complete">Tableau à compléter</h2>
+
+			<div class="taches">
+				<h3 class="txt task sousTitre">Tâches:</h3>
+
+				<ul style="list-style-type: none">
+					<li class="task"><input type="checkbox" /> Je veux que le texte dans mon tableau soit aligné au centre.</li>
+					<li class="task"><input type="checkbox" /> Je veux que mon tous mes éléments aient une bordure de 1px de couleur noire. De plus, leur texte doit être de couleur noire.</li>
+					<li class="task"><input type="checkbox" /> Je veux que mes th dans mon thead span sur 3 colonnes chaque.</li>
+					<li class="task"><input type="checkbox" /> Je veux que ma table ait une bordure qui s'écrase sur elle-même.</li>
+					<li class="task"><input type="checkbox" /> Je veux un padding de 10px sur mes cellules d'entête et de corps.</li>
+					<li class="task"><input type="checkbox" /> Je veux que le fond de mes cellules de tête soit beige et leur texte soit de couleur #333.</li>
+					<li class="task"><input type="checkbox" /> Je veux que mes lignes de corps alternent entre la couleur #f9f9f9 et gris.</li>
+					<li class="task"><input type="checkbox" /> Je veux que ma table ait un effet d'ombre très peu opaque.</li>
+					<li class="task"><input type="checkbox" /> Je veux que ma souris change en format pointeur quand je passe sur une rangée et que sa couleur change pour #00df7a.</li>
+					<li class="task"><input type="checkbox" /> Je veux un effet de transition sur ce changement de couleur de 0.3s.</li>
+					<li class="task"><input type="checkbox" /> Je veux régler le layout de la rangée de Paul.</li>
+					<li class="task"><input type="checkbox" /> Je veux que la cellule de Paul ait un fond rouge.</li>
+					<li class="task"><input type="checkbox" /> Les tableaux ne sont pas responsive, trouvez une solution pour ne pas ruiner le format téléphone.</li>
+				</ul>
+			</div>
+
+			<div class="pratique travail">
+				<table>
+					<thead>
+						<tr>
+							<th colspan="3">Informations Personnelles</th>
+							<th colspan="3">Statistiques</th>
+						</tr>
+						<tr>
+							<th>#</th>
+							<th>Nom</th>
+							<th>Âge</th>
+							<th>Score</th>
+							<th>Rang</th>
+							<th>Commentaire</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Marie</td>
+							<td>24</td>
+							<td>85</td>
+							<td>Or</td>
+							<td>Très bon travail</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Jean</td>
+							<td>30</td>
+							<td>72</td>
+							<td>Argent</td>
+							<td>Peut mieux faire</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Sam</td>
+							<td>28</td>
+							<td>90</td>
+							<td>Or</td>
+							<td>Excellente performance</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Jexa</td>
+							<td>20</td>
+							<td>50</td>
+							<td>Bronze</td>
+							<td>Travail en cours</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Paul</td>
+							<td>65</td>
+							<td>Argent</td>
+							<td>Bon effort</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="6">Tableau à compléter</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+
+			<p class="txt">Il existe également l'attribut <code class="gold">table-layout</code> qui est plus communément utilisé en auto ou en fixed, et manipulé avec la width en % de la table, je vous invite à faire des tests avec ces deux valeurs.</p>
+		</div>
+	</body>
+</html>
