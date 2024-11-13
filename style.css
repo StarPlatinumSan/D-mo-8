@@ -1,140 +1,140 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1,
 h2 {
-	max-width: fit-content;
-	color: aliceblue;
-	text-align: center;
+  max-width: fit-content;
+  color: aliceblue;
+  text-align: center;
 }
 
 .preGold {
-	background-color: rgb(37, 37, 37);
-	border: 2px solid gold;
-	padding: 1rem;
-	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: whitesmoke;
+  background-color: rgb(37, 37, 37);
+  border: 2px solid gold;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
 }
 
 .container {
-	background-color: #333333;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 3rem;
+  background-color: #333333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
 .card {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: aliceblue;
-	padding: 1rem;
-	width: clamp(250px, 30vw, 400px);
-	min-width: 200px;
-	min-height: 20vh;
-	border-radius: 5px;
-	box-shadow: rgb(0, 0, 0) 2px 2px 5px;
-	font-weight: 600;
-	transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 1rem;
+  width: clamp(250px, 30vw, 400px);
+  min-width: 200px;
+  min-height: 20vh;
+  border-radius: 5px;
+  box-shadow: rgb(0, 0, 0) 2px 2px 5px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
 }
 
 .card:hover {
-	cursor: pointer;
-	transform: scale(1.1);
-	background-color: gold;
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: gold;
 }
 
 .txt {
-	color: aliceblue;
-	text-align: center;
+  color: aliceblue;
+  text-align: center;
 }
 
 .task {
-	color: goldenrod;
-	font-weight: 600;
+  color: goldenrod;
+  font-weight: 600;
 }
 
 .gold {
-	color: gold;
+  color: gold;
 }
 
 .taches {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .taches li {
-	margin-top: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .sousTitre {
-	align-self: flex-start;
+  align-self: flex-start;
 }
 
 /* section tableaux */
 
 .containerTab {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	min-height: 100vh;
-	background-color: #333333;
-	padding: 1rem;
-	gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #333333;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .separation {
-	width: 100%;
-	height: 1px;
-	background-color: gold;
+  width: 100%;
+  height: 1px;
+  background-color: gold;
 }
 
 .exemple {
-	display: flex;
-	width: clamp(300px, 50vw, 1000px);
-	background-color: aliceblue;
-	border: 2px solid gold;
-	border-radius: 5px;
-	overflow-x: auto;
+  display: flex;
+  width: clamp(300px, 50vw, 1000px);
+  background-color: aliceblue;
+  border: 2px solid gold;
+  border-radius: 5px;
+  overflow-x: auto;
 }
 
 .exemple pre {
-	background-color: rgb(37, 37, 37);
-	padding: 1rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: whitesmoke;
+  background-color: rgb(37, 37, 37);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
 }
 
 .pratique {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: aliceblue;
 }
 
 .exo1 {
-	color: black;
+  color: black;
 }
 
 .exo2 {
-	color: black;
+  color: black;
 }
 
 .travail {
-	padding: 3rem;
-	background-color: gray;
+  padding: 3rem;
+  background-color: gray;
 }
